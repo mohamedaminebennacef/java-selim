@@ -1,0 +1,34 @@
+.ajouter_etudiant_container {
+    -fx-background-color : #EEEEEE;
+}
+.ajouter_etudiant_container Text {
+    -fx-font-size:1.7em;
+    -fx-fill: #888888;
+}
+.ajouter_etudiant_container VBox {
+    -fx-border-width :  0 0 0 1;
+    -fx-border-color: #000000;
+    -fx-padding: 10;
+    -fx-spacing:15;
+}
+.ajouter_etudiant_container TextField {
+    -fx-pref-width : 250;
+    -fx-pref-height: 30;
+    -fx-background-color:#FFFFFF;
+    -fx-font-size:1.3em;
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA,3,0,0,3);
+}
+.ajouter_etudiant_container Button {
+    -fx-background-color:linear-gradient(to right,#0984e3,#0072cb);
+    -fx-effect: dropshadow(three-pass-box,#AAAAAA,3,0,0,3);
+    -fx-pref-width:250;
+    -fx-font-size:1.5em;
+    -fx-font-family:'Calibri Light';
+    -fx-text-fill : #FFFFFF;
+}
+.ajouter_etudiant_container Button {
+    -fx-cursor: hand;
+}
+.error_lbl {
+    -fx-text-fill : #FF0000;
+}

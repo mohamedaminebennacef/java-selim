@@ -1,0 +1,34 @@
+.utilisateur_cell_conatainer {
+    -fx-background-color : #FFFFFF;
+    -fx-background-radius:10;
+    /*-fx-effect: dropshadow(three-pass-box,#000000,5,0,0,7);*/
+    -fx-margin:15px;
+}
+.utilisateur_cell_conatainer FontAwesomeIconView {
+    -fx-fill:#0984e3;
+}
+.utilisateur_cell_conatainer HBox {
+    -fx-spacing:15;
+    -fx-alignement:Center_left;
+}
+.utilisateur_cell_conatainer HBox Label {
+    -fx-text-fill:#444444;
+    -fx-font-family:"Calibri Light";
+    -fx-font-size:1.5em;
+}
+.utilisateur_display_lbl {
+    -fx-font-family:"Calibri";
+    -fx-font-weight:bold;
+    -fx-font-size:1.1em;
+}
+
+.delete_btn {
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color:#2ecc71;
+}
+.delete_btn FontAwesomeIconView {
+    -fx-fill:#FFFFFF;
+}
+.delete_btn:hover {
+    -fx-cursor:hand;
+}

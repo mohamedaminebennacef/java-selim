@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Styles/login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionetudiant.projet.Controllers.LoginController">
+   <VBox prefHeight="400.0" prefWidth="218.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <FontAwesomeIconView glyphName="GRADUATION_CAP" size="35" />
+      <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des étudiants">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </VBox>
+   <VBox layoutX="236.0" layoutY="25.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="25.0">
+      <Label id="choice-prompt-text" text="Choisir type de session:" />
+      <ChoiceBox fx:id="acc_selector" prefWidth="120" styleClass="session-selector" />
+      <Label text="Id utilisateur :" />
+      <TextField fx:id="id_utilisateur_fld" styleClass="input_field" />
+      <Label text="Mot de passe :" />
+      <TextField fx:id="mot_pass_fld" styleClass="input_field" />
+      <Button fx:id="login_btn" mnemonicParsing="false" text="Se connecter" />
+      <Label fx:id="error_lbl" styleClass="error_lbl" />
+   </VBox>
+</AnchorPane>
