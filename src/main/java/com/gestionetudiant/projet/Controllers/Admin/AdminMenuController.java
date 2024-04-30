@@ -23,7 +23,10 @@ public class AdminMenuController implements Initializable {
         ajouter_etudiant_btn.setOnAction(event -> onAjouterEtudiant());
         liste_etudiants_btn.setOnAction(event -> onEtudiants());
         recherche_etudiant_btn.setOnAction(event -> onRecherche());
-        deconnecter_btn.setOnAction(event -> onClose());
+        deconnecter_btn.setOnAction(event -> {
+            Model.getInstance().getViewFactory().showLoginWindow();
+            onClose();
+        });
     }
     private void onAjouterEtudiant() {
         Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.AJOUTERETUDIANT);

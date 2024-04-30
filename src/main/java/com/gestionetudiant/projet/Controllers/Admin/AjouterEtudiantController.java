@@ -3,7 +3,6 @@ package com.gestionetudiant.projet.Controllers.Admin;
 import com.gestionetudiant.projet.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -34,7 +33,6 @@ public class AjouterEtudiantController implements Initializable {
             return;
         }
         Model model = Model.getInstance();
-        System.out.println(idUtilisateur);
         model.getdatabaseDriver().addStudent(nom, prenom, dateNaissance, specialite, motPass,idUtilisateur);
         showSuccessMessage();
     }
@@ -42,7 +40,7 @@ public class AjouterEtudiantController implements Initializable {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Success");
         alert.setHeaderText(null);
-        alert.setContentText("Student added successfully!");
+        alert.setContentText("Étudiant ajouté avec succès!");
         alert.showAndWait();
     }
 }

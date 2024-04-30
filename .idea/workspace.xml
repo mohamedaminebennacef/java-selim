@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="Building the UtilisateurCell and ClassementCell UI">
+    <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="Adding final changement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Table.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Table.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionetudiant.db" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionetudiant.sqbpro" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.sqbpro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AjouterEtudiantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AjouterEtudiantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ViewFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,19 +66,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/bennacef/Desktop/Mini-projet-Java-main",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bennacef/Desktop/Mini-projet-Java-main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bennacef\IdeaProjects\projet\src\main\resources\Fxml\Admin" />
@@ -127,7 +134,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713107241913</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding final changement">
+      <option name="closed" value="true" />
+      <created>1714462864768</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714462864768</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Adding final changement">
+      <option name="closed" value="true" />
+      <created>1714463021085</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714463021085</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,19 +169,15 @@
     <MESSAGE value="Building UserMenu UI" />
     <MESSAGE value="Building Dashboard" />
     <MESSAGE value="Building the Admin session UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Building the Admin session UI" />
+    <MESSAGE value="Adding final changement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding final changement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java</url>
-          <line>75</line>
+          <line>63</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

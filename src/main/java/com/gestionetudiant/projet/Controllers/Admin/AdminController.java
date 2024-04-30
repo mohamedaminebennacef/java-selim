@@ -3,7 +3,6 @@ package com.gestionetudiant.projet.Controllers.Admin;
 import com.gestionetudiant.projet.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.BorderPane;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -18,7 +17,6 @@ public class AdminController implements Initializable {
                 case RECHERCHE -> admin_parent.setCenter(Model.getInstance().getViewFactory().getRechercheView());
                 default -> admin_parent.setCenter(Model.getInstance().getViewFactory().getAjouterEtudiantView());
             }
-
         });
     }
 }

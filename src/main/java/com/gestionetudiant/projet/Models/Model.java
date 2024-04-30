@@ -2,7 +2,6 @@ package com.gestionetudiant.projet.Models;
 
 import com.gestionetudiant.projet.Views.AccountType;
 import com.gestionetudiant.projet.Views.ViewFactory;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -17,18 +16,17 @@ public class Model {
     private boolean utilisateurLoginSuccessFlag;
 
     // Admin data section
+    private boolean adminLoginSuccessFlag;
 
     private Model() {
         this.viewFactory = new ViewFactory();
         this.databaseDriver = new DatabaseDriver();
-
         // utilisateur data section
         this.utilisateurLoginSuccessFlag = false;
         this.utilisateur = new Utilisateur("","","","","","");
-
         // Admin data section
+        this.adminLoginSuccessFlag = false;
     }
-
     public static synchronized Model getInstance() {
         if (model == null) {
             model = new Model();
@@ -36,30 +34,20 @@ public class Model {
         return model;
     }
     public ViewFactory getViewFactory() {return viewFactory;}
-    public DatabaseDriver getdatabaseDriver() {
-        return databaseDriver;
-    }
-    public AccountType getLoginAccountType() {
-        return loginAccountType;
-    }
-    public void setLoginAccountType(AccountType loginAccountType) {
-        this.loginAccountType = loginAccountType;
-    }
+    public DatabaseDriver getdatabaseDriver() {return databaseDriver;}
+    public AccountType getLoginAccountType() {return loginAccountType;}
+    public void setLoginAccountType(AccountType loginAccountType) {this.loginAccountType = loginAccountType;}
 
     // utilisateur method section
     public boolean getUtilisateurLoginSuccessFlag() {return this.utilisateurLoginSuccessFlag;}
-
     public void setUtilisateurLoginSuccessFlag(boolean flag) {this.utilisateurLoginSuccessFlag = flag;}
-
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
-
     public void evaluateUtilisateurCred(String idUtilisateur,String motPass) {
         ResultSet resultSet = databaseDriver.getUtilisateurData(idUtilisateur,motPass);
         try {
             if (resultSet.isBeforeFirst()) {
-                System.out.println(resultSet.getString("Nom"));
                 this.utilisateur.nomProperty().set(resultSet.getString("Nom"));
                 this.utilisateur.prenomProperty().set(resultSet.getString("Prenom"));
                 this.utilisateur.idUtilisateurProperty().set(resultSet.getString("IdUtilisateur"));
@@ -91,6 +79,17 @@ public class Model {
         return null;
     }
 
-
-
+    // admin method section
+    public boolean getAdminLoginSuccessFlag() {return this.adminLoginSuccessFlag;}
+    public void setAdminLoginSuccessFlag(boolean flag) {this.adminLoginSuccessFlag = flag;}
+    public void evaluateAdminCred(String idAdmin,String motPass) {
+        ResultSet resultSet = databaseDriver.getAdminData(idAdmin,motPass);
+        try {
+            if (resultSet.isBeforeFirst()) {
+                this.adminLoginSuccessFlag = true;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

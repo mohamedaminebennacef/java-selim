@@ -74,8 +74,6 @@ public class ViewFactory {
         }
         return listeEtudiantsView;
     }
-
-
     public void showUtilisateurWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Utilisateur/Utilisateur.fxml"));
         UtilisateurController utilisateurController = new UtilisateurController();

@@ -123,8 +123,16 @@ public class DatabaseDriver {
     /*
         Admin Session
      */
+    public ResultSet getAdminData(String idAdmin,String motPass) {
+        Statement statement;
+        ResultSet resultSet = null;
+        try {
+            statement = this.conn.createStatement();
+            resultSet = statement.executeQuery("select * from Admin where IdAdmin = '"+idAdmin+"'and MotPass='"+motPass+"';");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return resultSet;
+    }
 
-    /*
-        Admin&Utilisateur Session
-     */
 }
