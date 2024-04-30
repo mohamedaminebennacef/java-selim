@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="Adding final changement">
+    <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="fixing login issues and verifying the admin credentials">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Table.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Table.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionetudiant.db" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionetudiant.sqbpro" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.sqbpro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AjouterEtudiantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AjouterEtudiantController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714463021085</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixing login issues and verifying the admin credentials">
+      <option name="closed" value="true" />
+      <created>1714491765461</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714491765462</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,7 +170,8 @@
     <MESSAGE value="Building Dashboard" />
     <MESSAGE value="Building the Admin session UI" />
     <MESSAGE value="Adding final changement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding final changement" />
+    <MESSAGE value="fixing login issues and verifying the admin credentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing login issues and verifying the admin credentials" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

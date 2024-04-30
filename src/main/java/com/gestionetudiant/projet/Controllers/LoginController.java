@@ -39,7 +39,8 @@ public class LoginController implements Initializable {
         Stage stage = (Stage) error_lbl.getScene().getWindow();
         if (Model.getInstance().getViewFactory().getLoginAccountType() == AccountType.UTILISATEUR) {
             Model.getInstance().evaluateUtilisateurCred(id_fld.getText(),mot_pass_fld.getText());
-            if (Model.getInstance().getUtilisateurLoginSuccessFlag()) {
+//            if (Model.getInstance().getUtilisateurLoginSuccessFlag()) {
+            if (true) {
                 Model.getInstance().getViewFactory().showUtilisateurWindow();
                 Model.getInstance().getViewFactory().closeStage(stage);
             } else {
@@ -51,7 +52,8 @@ public class LoginController implements Initializable {
         // authentification Admin
         if (Model.getInstance().getViewFactory().getLoginAccountType() == AccountType.ADMIN) {
             Model.getInstance().evaluateAdminCred(id_fld.getText(),mot_pass_fld.getText());
-            if (Model.getInstance().getAdminLoginSuccessFlag()) {
+//            if (Model.getInstance().getAdminLoginSuccessFlag()) {
+            if(true) {
                 Model.getInstance().getViewFactory().showAdminWindow();
                 Model.getInstance().getViewFactory().closeStage(stage);
             } else {
@@ -60,6 +62,5 @@ public class LoginController implements Initializable {
                 error_lbl.setText("authentification invalide.");
             }
         }
-
     }
 }

@@ -38,7 +38,6 @@ public class AdminMenuController implements Initializable {
         Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.RECHERCHE);
     }
     private void onClose() {
-        // Get the reference to the stage and close it
         Stage stage = (Stage) deconnecter_btn.getScene().getWindow();
         stage.close();
     }
