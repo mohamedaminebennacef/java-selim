@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="Building the UtilisateurCell and ClassementCell UI" />
+    <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="Building the UtilisateurCell and ClassementCell UI">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionetudiant.db" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestionetudiant.sqbpro" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.sqbpro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +37,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mohamedaminebennacef/UniversityManagementSystem.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/mohamedaminebennacef/java-selim.git&quot;,
     &quot;accountId&quot;: &quot;84010060-4f3a-4151-a341-6ee67008dce8&quot;
   }
 }</component>
@@ -56,11 +63,12 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/bennacef/Desktop/Mini-projet-Java-main",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -147,6 +155,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java</url>
           <line>79</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

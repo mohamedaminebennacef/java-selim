@@ -5,7 +5,7 @@ module com.gestionetudiant.projet {
     requires java.sql;
     requires org.xerial.sqlitejdbc;
     requires java.desktop;
-
+    requires org.apache.pdfbox;
 
     opens com.gestionetudiant.projet to javafx.fxml;
     exports com.gestionetudiant.projet;
