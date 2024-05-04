@@ -14,15 +14,20 @@ import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
     public ListView classement_listview;
-    public TextField java_fld;
+    public TextField prog_fld;
+    public TextField analyse_fld;
+    public TextField archi_fld;
     public TextField poo_fld;
-    public TextField bd_fld;
-    public Button envoyer_btn;
+    public TextField sys_fld;
+    public TextField java_fld;
+    public TextField reseaux_fld;
     public TextField web_fld;
-    public TextField idUtilisateur_fld;
-    public TextField francais_fld;
-    public TextField Droits_fld;
     public TextField anglais_fld;
+    public TextField francais_fld;
+    public TextField droits_fld;
+    public TextField conception_fld;
+    public TextField id_utilisateur_fld;
+    public Button envoyer_btn;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -33,23 +38,27 @@ public class DashboardController implements Initializable {
 
     private void calculateAndShowAverage() {
         try {
-            double java = Double.parseDouble(java_fld.getText());
+            double prog = Double.parseDouble(prog_fld.getText());
+            double analyse = Double.parseDouble(analyse_fld.getText());
+            double archi = Double.parseDouble(archi_fld.getText());
             double poo = Double.parseDouble(poo_fld.getText());
-            double bd = Double.parseDouble(bd_fld.getText());
+            double sys = Double.parseDouble(sys_fld.getText());
+            double java = Double.parseDouble(java_fld.getText());
+            double reseaux = Double.parseDouble(reseaux_fld.getText());
             double web = Double.parseDouble(web_fld.getText());
-            double francais = Double.parseDouble(francais_fld.getText());
-            double Droits = Double.parseDouble(Droits_fld.getText());
             double anglais = Double.parseDouble(anglais_fld.getText());
+            double francais = Double.parseDouble(francais_fld.getText());
+            double droits = Double.parseDouble(droits_fld.getText());
+            double conception = Double.parseDouble(conception_fld.getText());
 
-            double moyenne = (java + poo + bd + web + francais + Droits + anglais) / 7;
+
+            double moyenne = (prog+analyse+archi+poo+sys+java+reseaux+web+anglais+francais+droits+conception) / 12;
             String formattedMoyenne = String.format("%.2f", moyenne);
 
-            String idUtilisateur = idUtilisateur_fld.getText();
+            String idUtilisateur = id_utilisateur_fld.getText();
 
             Model model = Model.getInstance();
-            System.out.println(idUtilisateur);
             model.getdatabaseDriver().updateMoyenne(idUtilisateur,moyenne);
-
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Moyenne");
             alert.setHeaderText(null);
