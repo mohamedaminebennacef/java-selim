@@ -1,18 +1,17 @@
 package com.gestionetudiant.projet.Controllers.Utilisateur;
 
-import com.gestionetudiant.projet.Models.DatabaseDriver;
+import com.gestionetudiant.projet.Controllers.getData;
 import com.gestionetudiant.projet.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class DashboardController implements Initializable {
+public class SaisieNotesController implements Initializable {
     public ListView classement_listview;
     public TextField prog_fld;
     public TextField analyse_fld;
@@ -55,7 +54,7 @@ public class DashboardController implements Initializable {
             double moyenne = (prog+analyse+archi+poo+sys+java+reseaux+web+anglais+francais+droits+conception) / 12;
             String formattedMoyenne = String.format("%.2f", moyenne);
 
-            String idUtilisateur = id_utilisateur_fld.getText();
+            String idUtilisateur = getData.id;
 
             Model model = Model.getInstance();
             model.getdatabaseDriver().updateMoyenne(idUtilisateur,moyenne);

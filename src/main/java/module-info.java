@@ -6,6 +6,10 @@ module com.gestionetudiant.projet {
     requires org.xerial.sqlitejdbc;
     requires java.desktop;
     requires org.apache.pdfbox;
+    requires jdk.jshell;
+    opens com.gestionetudiant.projet.Controllers.Admin to javafx.fxml;
+
+    opens com.gestionetudiant.projet.Controllers;
 
     opens com.gestionetudiant.projet to javafx.fxml;
     exports com.gestionetudiant.projet;

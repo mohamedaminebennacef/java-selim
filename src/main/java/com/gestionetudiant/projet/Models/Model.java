@@ -58,26 +58,7 @@ public class Model {
             e.printStackTrace();
         }
     }
-    public ResultSet getAllStudents() {return databaseDriver.getAllStudents();}
-    public ResultSet getAllSortedStudents() {return databaseDriver.getAllSortedStudents();}
-    public Utilisateur getUtilisateurById(String idUtilisateur) {
-        ResultSet resultSet = databaseDriver.getUtilisateurById(idUtilisateur);
-        try {
-            if (resultSet.isBeforeFirst()) {
-                return new Utilisateur(
-                        resultSet.getString("Nom"),
-                        resultSet.getString("Prenom"),
-                        resultSet.getString("DateNaiss"),
-                        resultSet.getString("Specialite"),
-                        resultSet.getString("MotPass"),
-                        resultSet.getString("IdUtilisateur")
-                );
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
+
 
     // admin method section
     public boolean getAdminLoginSuccessFlag() {return this.adminLoginSuccessFlag;}

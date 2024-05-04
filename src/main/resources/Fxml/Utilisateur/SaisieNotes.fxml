@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="698.0" prefWidth="750.0" styleClass="dashboard" stylesheets="@../../Styles/SaisieNotes.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionetudiant.projet.Controllers.Utilisateur.SaisieNotesController">
+    <Text layoutX="36.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section-title" text="Saisie des notes" wrappingWidth="283.6570281982422" AnchorPane.rightAnchor="430.3429718017578" AnchorPane.topAnchor="41.974998474121094">
+      <font>
+         <Font size="27.0" />
+      </font></Text>
+    <VBox layoutX="18.0" layoutY="65.0" styleClass="saisie_notes_container" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="70.0">
+        <Label text="Programmation mathematique :" />
+        <TextField fx:id="prog_fld" prefHeight="39.0" prefWidth="70.0" promptText="Note" />
+        <Label text="Analyse numerique :" />
+        <TextField fx:id="analyse_fld" promptText="Note" />
+        <Label text="Architecture des ordinateurs :" />
+        <TextField fx:id="archi_fld" promptText="Note" />
+        <Label text="Programmation Orientée Objet :" />
+        <TextField fx:id="poo_fld" promptText="Note" />
+        <Label text="Systèmes d'exploitation ::" />
+        <TextField fx:id="sys_fld" promptText="Note" />
+        <Label text="Atelier de JAVA :" />
+        <TextField fx:id="java_fld" promptText="Note" />
+        <Label text="Réseaux Informatiques :" />
+        <TextField fx:id="reseaux_fld" promptText="Note" />
+    </VBox>
+   <VBox layoutX="432.0" layoutY="-17.0" prefHeight="625.0" prefWidth="304.0" styleClass="saisie_notes_container" AnchorPane.topAnchor="-17.0">
+      <children>
+         <Label text="Développement Web :" />
+         <TextField fx:id="web_fld" prefHeight="39.0" prefWidth="70.0" promptText="Note" />
+         <Label text="Anglais :" />
+         <TextField fx:id="anglais_fld" promptText="Note" />
+         <Label text="Francais :" />
+         <TextField fx:id="francais_fld" promptText="Note" />
+         <Label text="Droits de l'Homme :" />
+         <TextField fx:id="droits_fld" promptText="Note" />
+         <Label text="Conception des systemes d'information :" />
+         <TextField fx:id="conception_fld" promptText="Note" />
+         <Button fx:id="envoyer_btn" mnemonicParsing="false" prefHeight="37.0" prefWidth="375.0" text="Envoyer" />
+      </children>
+   </VBox>
 </AnchorPane>

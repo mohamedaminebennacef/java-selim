@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
 
-<BorderPane fx:id="utilisateur_parent" xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml">
+<BorderPane fx:id="utilisateur_parent" prefHeight="608.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
     <left>
-        <fx:include source="UtilisateurMenu.fxml"/>
+        <fx:include source="UtilisateurMenu.fxml" />
     </left>
 
     <center>
-        <fx:include source="Dashboard.fxml"/>
+        <fx:include source="SaisieNotes.fxml" />
     </center>
 
 </BorderPane>

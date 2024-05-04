@@ -4,11 +4,11 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<?import javafx.scene.shape.Line?>
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="167.0" styleClass="main_menu_container" stylesheets="@../../Styles/UtilisateurMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionetudiant.projet.Controllers.Admin.AdminMenuController">
-    <AnchorPane prefHeight="577.0" prefWidth="154.0" styleClass="left_container">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="167.0" styleClass="main_menu_container" stylesheets="@../../Styles/UtilisateurMenu.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gestionetudiant.projet.Controllers.Admin.AdminMenuController">
+    <AnchorPane prefHeight="700.0" prefWidth="169.0" styleClass="left_container">
         <VBox prefHeight="80.0" prefWidth="160.0" styleClass="title_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <FontAwesomeIconView glyphName="GRADUATION_CAP" size="30" />
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des étduiants" />
@@ -19,16 +19,12 @@
                     <FontAwesomeIconView glyphName="PLUS" size="20" />
                 </graphic>
             </Button>
-            <Button fx:id="liste_etudiants_btn" mnemonicParsing="false" text="Etudiants">
+            <Button fx:id="liste_etudiants_btn" mnemonicParsing="false" text="Classment">
                 <graphic>
                     <FontAwesomeIconView glyphName="LIST" size="20" />
                 </graphic>
             </Button>
-            <Button fx:id="recherche_etudiant_btn" mnemonicParsing="false" text="Recherche">
-                <graphic>
-                    <FontAwesomeIconView glyphName="SEARCH" size="20" />
-                </graphic>
-            </Button>
+
             <Line endX="369.0857849121094" endY="-0.6231237649917603" startX="239.7928924560547" startY="-0.621320366859436" />
             <Button fx:id="deconnecter_btn" mnemonicParsing="false" styleClass="alt_menu_btn" text="Se deconnecter">
                 <graphic>

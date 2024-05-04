@@ -6,24 +6,11 @@
     -fx-font-family:"Calibri Light";
 }
 .section-title {
-    -fx-font-size:1.4em;
+    -fx-font-size:2em;
+    -fx-font-weight: bold;
     -fx-font-family:"Calibri Light";
 }
 
-/* Classement View*/
-
-.classement_listview {
-    -fx-background-color:#EEEEEE;
-    -fx-border-width:0 0 0 0;
-    -fx-border-color:#AAAAAA;
-}
-.classement_listView .scroll-bar:vertical {
-    -fx-scale-x:0;
-}
-.list-cell {
-    -fx-background-color:#EEEEEE;
-    -fx-padding:15 0 15 0;
-}
 
 /*Saisie Note View*/
 
@@ -38,7 +25,7 @@
     -fx-font-size:1.3em;
 }
 .saisie_notes_container TextField {
-    -fx-pref-height:40;
+    -fx-pref-height:35;
     -fx-background-color:#FFFFFF;
     -fx-effect:dropshadow(three-pass-box,#AAAAAA,3,0,0,3);
 }

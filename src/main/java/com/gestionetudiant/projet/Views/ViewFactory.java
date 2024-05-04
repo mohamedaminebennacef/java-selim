@@ -16,24 +16,20 @@ public class ViewFactory {
     private final ObjectProperty<UtilisateurMenuOptions> utilisateurSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane listeEtudiantsView;
-    private AnchorPane ClassementView;
 
     // Admin Views
     private final ObjectProperty<AdminMenuOptions> adminSelectedMenuItem;
     private AnchorPane ajouterEtudiantView;
     private AnchorPane utilisateurView;
-    private AnchorPane rechercheView;
 
     public ViewFactory() {
         this.loginAccountType = AccountType.UTILISATEUR;
         this.utilisateurSelectedMenuItem = new SimpleObjectProperty<>();
         this.adminSelectedMenuItem = new SimpleObjectProperty<>();
     }
-
     public AccountType getLoginAccountType() {
         return loginAccountType;
     }
-
     public void setLoginAccountType(AccountType loginAccountType) {
         this.loginAccountType = loginAccountType;
     }
@@ -47,7 +43,7 @@ public class ViewFactory {
     public AnchorPane getDashboardView() {
         if (dashboardView == null ) {
             try {
-                dashboardView = new FXMLLoader(getClass().getResource("/Fxml/Utilisateur/Dashboard.fxml")).load();
+                dashboardView = new FXMLLoader(getClass().getResource("/Fxml/Utilisateur/SaisieNotes.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -57,17 +53,7 @@ public class ViewFactory {
     public AnchorPane getListeEtudiantsView() {
         if (listeEtudiantsView == null) {
             try {
-                listeEtudiantsView = new FXMLLoader(getClass().getResource("/Fxml/Admin/ListeEtudiants.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return listeEtudiantsView;
-    }
-    public AnchorPane getClassementView() {
-        if (ClassementView == null) {
-            try {
-                listeEtudiantsView = new FXMLLoader(getClass().getResource("/Fxml/Utilisateur/Classement.fxml")).load();
+                listeEtudiantsView = new FXMLLoader(getClass().getResource("/Fxml/Admin/Classement.fxml")).load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -83,9 +69,7 @@ public class ViewFactory {
     /*
      * Admin Views Section
      * */
-    public ObjectProperty<AdminMenuOptions> getAdminSelectedMenuItem() {
-        return adminSelectedMenuItem;
-    }
+    public ObjectProperty<AdminMenuOptions> getAdminSelectedMenuItem() {return adminSelectedMenuItem;}
     public AnchorPane getAjouterEtudiantView() {
         if (ajouterEtudiantView == null) {
             try {
@@ -107,17 +91,6 @@ public class ViewFactory {
         }
         return utilisateurView;
     }
-    public AnchorPane getRechercheView() {
-        if (rechercheView == null) {
-            try {
-                rechercheView = new FXMLLoader(getClass().getResource("/Fxml/Admin/Recherche.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        return rechercheView;
-    }
-
     public void showAdminWindow() {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Fxml/Admin/Admin.fxml"));
         AdminController controller = new AdminController();

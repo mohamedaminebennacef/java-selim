@@ -22,7 +22,6 @@ public class AdminMenuController implements Initializable {
     private void addListeners(){
         ajouter_etudiant_btn.setOnAction(event -> onAjouterEtudiant());
         liste_etudiants_btn.setOnAction(event -> onEtudiants());
-        recherche_etudiant_btn.setOnAction(event -> onRecherche());
         deconnecter_btn.setOnAction(event -> {
             Model.getInstance().getViewFactory().showLoginWindow();
             onClose();
@@ -33,9 +32,6 @@ public class AdminMenuController implements Initializable {
     }
     private void onEtudiants() {
         Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.ETUDIANTS);
-    }
-    private void onRecherche() {
-        Model.getInstance().getViewFactory().getAdminSelectedMenuItem().set(AdminMenuOptions.RECHERCHE);
     }
     private void onClose() {
         Stage stage = (Stage) deconnecter_btn.getScene().getWindow();
