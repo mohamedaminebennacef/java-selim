@@ -19,7 +19,7 @@
             <TableColumn fx:id="moyenneCol" prefWidth="144.0" style="-fx-font-size: 15px; -fx-font-family: Calibri Light;" text="Moyenne" />
                 </columns>
             </TableView>
-      <Button fx:id="exporter" layoutX="335.0" layoutY="488.0" mnemonicParsing="false" onAction="#exporterPdf" prefHeight="46.0" prefWidth="149.0" style="-fx-background-color: #0984e3;; -fx-text-fill: #fff;" text="Exporter(PDF)">
+      <Button fx:id="exporter" layoutX="335.0" layoutY="488.0" mnemonicParsing="false" onAction="#exporterPdf" prefHeight="46.0" prefWidth="149.0" style="-fx-background-color: #0984e3; -fx-text-fill: #fff;" text="Exporter(PDF)">
          <font>
             <Font name="Calibri Light" size="16.0" />
          </font>

@@ -5,14 +5,13 @@ import com.gestionetudiant.projet.Models.Model;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
-
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.text.DecimalFormat;
+
 
 public class SaisieNotesController implements Initializable {
-    public ListView classement_listview;
     public TextField prog_fld;
     public TextField analyse_fld;
     public TextField archi_fld;
@@ -25,7 +24,6 @@ public class SaisieNotesController implements Initializable {
     public TextField francais_fld;
     public TextField droits_fld;
     public TextField conception_fld;
-    public TextField id_utilisateur_fld;
     public Button envoyer_btn;
 
     @Override
@@ -52,16 +50,17 @@ public class SaisieNotesController implements Initializable {
 
 
             double moyenne = (prog+analyse+archi+poo+sys+java+reseaux+web+anglais+francais+droits+conception) / 12;
-            String formattedMoyenne = String.format("%.2f", moyenne);
+            DecimalFormat decimalFormat = new DecimalFormat("#.##");
+            String formattedMoyenne = decimalFormat.format(moyenne);
 
             String idUtilisateur = getData.id;
 
             Model model = Model.getInstance();
-            model.getdatabaseDriver().updateMoyenne(idUtilisateur,moyenne);
+            model.getdatabaseDriver().updateMoyenne(idUtilisateur,Double.parseDouble(formattedMoyenne));
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Moyenne");
             alert.setHeaderText(null);
-            alert.setContentText("La moyenne est : " + formattedMoyenne);
+            alert.setContentText("La moyenne est : " + Double.parseDouble(formattedMoyenne));
             alert.showAndWait();
         } catch (NumberFormatException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);

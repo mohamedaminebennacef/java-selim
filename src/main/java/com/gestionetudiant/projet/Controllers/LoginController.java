@@ -10,7 +10,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-
 import java.net.URL;
 import java.sql.ResultSet;
 import java.sql.SQLException;

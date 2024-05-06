@@ -14,12 +14,12 @@
             <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion des étduiants" />
         </VBox>
         <VBox layoutX="40.0" layoutY="265.0" prefHeight="400.0" prefWidth="160.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
-            <Button fx:id="ajouter_etudiant_btn" mnemonicParsing="false" text="Ajouter un étudiant">
+            <Button fx:id="ajouter_etudiant_btn" mnemonicParsing="false" text="Manipulation">
                 <graphic>
                     <FontAwesomeIconView glyphName="PLUS" size="20" />
                 </graphic>
             </Button>
-            <Button fx:id="liste_etudiants_btn" mnemonicParsing="false" text="Classment">
+            <Button fx:id="liste_etudiants_btn" mnemonicParsing="false" text="Classement">
                 <graphic>
                     <FontAwesomeIconView glyphName="LIST" size="20" />
                 </graphic>

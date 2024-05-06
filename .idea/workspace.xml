@@ -5,62 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae00d1c6-4d2f-42c7-9c15-738407a12114" name="Changes" comment="bug">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/getData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Classement.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/SaisieNotes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Table.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Table.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestionetudiant.db" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gestionetudiant.sqbpro" beforeDir="false" afterPath="$PROJECT_DIR$/gestionetudiant.sqbpro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AdminMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AjouterEtudiantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/AjouterEtudiantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/DeleteEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/EtudiantCellController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/EtudiantsCellController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/ListeEtudiantsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/ListeEtudiantsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/ModifierEtudiantCell.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/ModifierWindowController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Admin/RechercheController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/ClassementCellController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/ClassementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/SaisieNotesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/ListeEtudiantsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/UtilisateurMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Classement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/DatabaseDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Model.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Models/Utilisateur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ClassementCellFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/EtudiantsCellFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ViewFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Views/ViewFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Admin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Admin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/SaisieNotesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gestionetudiant/projet/Controllers/Utilisateur/SaisieNotesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AdminMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AdminMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AjouterEtudiant.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/AjouterEtudiant.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/EtudiantsCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/ListeEtudiants.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/ModifierEtudiantCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/ModifierWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Recherche.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/Classement.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/ClassementCell.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/Dashboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/Utilisateur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/Utilisateur.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Classement.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Admin/Classement.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/UtilisateurMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Fxml/Utilisateur/UtilisateurMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Classement.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/ClassementCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/SaisieNotes.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/Etudiants.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/ModifierEtudiantCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/UtilisateurCell.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/UtilisateurMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Styles/UtilisateurMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/listeEtudiants.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Styles/recherche.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +72,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/bennacef/Desktop/Mini-projet-Java-main - Copy/fontawesomefx-8.2.jar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/bennacef/Desktop/java-selim-main&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,

@@ -12,7 +12,6 @@ import java.util.ResourceBundle;
 public class AdminMenuController implements Initializable {
     public Button ajouter_etudiant_btn;
     public Button liste_etudiants_btn;
-    public Button recherche_etudiant_btn;
     public Button deconnecter_btn;
 
     @Override

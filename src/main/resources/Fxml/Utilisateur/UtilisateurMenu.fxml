@@ -20,7 +20,7 @@
 
             <Button fx:id="deconnecter_btn" mnemonicParsing="false" prefWidth="127.0" styleClass="deconnecter_btn" text="Se déconnecter">
                 <graphic>
-                    <FontAwesomeIconView glyphName="EXTERNAL_LINK" selectionFill="#b91d1d" size="20" />
+                    <FontAwesomeIconView glyphName="EXTERNAL_LINK" selectionFill="#b91d1d" size="20" styleClass="deconnecter_btn" />
                 </graphic>
             </Button>
         </VBox>
