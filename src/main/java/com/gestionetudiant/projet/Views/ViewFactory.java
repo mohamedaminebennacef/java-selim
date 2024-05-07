@@ -12,12 +12,13 @@ import javafx.stage.Stage;
 
 public class ViewFactory {
     private AccountType loginAccountType;
-    // Utilisateur Views
+
+    // interface Utilisateur
     private final ObjectProperty<UtilisateurMenuOptions> utilisateurSelectedMenuItem;
     private AnchorPane dashboardView;
     private AnchorPane listeEtudiantsView;
 
-    // Admin Views
+    // interface Admin
     private final ObjectProperty<AdminMenuOptions> adminSelectedMenuItem;
     private AnchorPane ajouterEtudiantView;
     private AnchorPane utilisateurView;
@@ -35,8 +36,9 @@ public class ViewFactory {
     }
 
     /*
-     * Utilisateur Views Section
-     * */
+        section des interfaces Utilisateur
+     */
+
     public ObjectProperty<UtilisateurMenuOptions> getUtilisateurSelectedMenuItem() {
         return utilisateurSelectedMenuItem;
     }
@@ -66,9 +68,11 @@ public class ViewFactory {
         loader.setController(utilisateurController);
         createStage(loader);
     }
+
     /*
-     * Admin Views Section
-     * */
+        Section des interfaces d'administration
+     */
+
     public ObjectProperty<AdminMenuOptions> getAdminSelectedMenuItem() {return adminSelectedMenuItem;}
     public AnchorPane getAjouterEtudiantView() {
         if (ajouterEtudiantView == null) {

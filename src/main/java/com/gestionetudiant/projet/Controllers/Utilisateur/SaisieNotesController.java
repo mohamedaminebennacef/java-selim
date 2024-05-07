@@ -10,7 +10,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.text.DecimalFormat;
 
-
 public class SaisieNotesController implements Initializable {
     public TextField prog_fld;
     public TextField analyse_fld;
@@ -48,11 +47,9 @@ public class SaisieNotesController implements Initializable {
             double droits = Double.parseDouble(droits_fld.getText());
             double conception = Double.parseDouble(conception_fld.getText());
 
-
             double moyenne = (prog+analyse+archi+poo+sys+java+reseaux+web+anglais+francais+droits+conception) / 12;
             DecimalFormat decimalFormat = new DecimalFormat("#.##");
             String formattedMoyenne = decimalFormat.format(moyenne);
-
             String idUtilisateur = getData.id;
 
             Model model = Model.getInstance();
@@ -62,6 +59,7 @@ public class SaisieNotesController implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("La moyenne est : " + Double.parseDouble(formattedMoyenne));
             alert.showAndWait();
+
         } catch (NumberFormatException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Erreur");

@@ -4,6 +4,7 @@ import java.sql.*;
 
 public class DatabaseDriver {
     private Connection conn;
+    // établissement du connexion à la base du données,
     public DatabaseDriver() {
         try {
             this.conn = DriverManager.getConnection("jdbc:sqlite:gestionetudiant.db");
@@ -12,7 +13,7 @@ public class DatabaseDriver {
         }
     }
     /*
-        Utilisateur Session
+        Session Utilisateur
      */
     public ResultSet getUtilisateurData(String idUtilisateur,String motPass) {
         Statement statement;
@@ -82,7 +83,7 @@ public class DatabaseDriver {
         }
     }
     /*
-        Admin Session
+        Session Admin
      */
     public ResultSet getAdminData(String idAdmin,String motPass) {
         Statement statement;

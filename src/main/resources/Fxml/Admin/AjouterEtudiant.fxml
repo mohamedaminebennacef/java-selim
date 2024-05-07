@@ -19,7 +19,7 @@
                   <String fx:value="shadow" />
                </styleClass>
                <children>
-                  <TableView fx:id="tableEtudiant" layoutY="-7.0" onMouseClicked="#addEmployeeSelect" prefHeight="356.0" prefWidth="745.0" stylesheets="@../../Styles/dashboardDesign.css">
+                  <TableView fx:id="tableEtudiant" layoutY="-7.0" onMouseClicked="#addUtilisateurSelect" prefHeight="356.0" prefWidth="745.0" stylesheets="@../../Styles/dashboardDesign.css">
                     <columns>
                       <TableColumn fx:id="nomCol" prefWidth="88.0" style="-fx-font-size: 15px; -fx-border-radius: 20px;" text="Nom" />
                       <TableColumn fx:id="prenomCol" prefWidth="109.0" style="-fx-font-size: 15px;" text="Prenom" />
@@ -85,7 +85,7 @@
                <font>
                   <Font size="16.0" />
                </font></TextField>
-            <Button fx:id="addBtn" layoutX="528.0" layoutY="552.0" mnemonicParsing="false" onAction="#addEmployeeAdd" prefHeight="37.0" prefWidth="83.0" styleClass="add-btn" stylesheets="@../../Styles/dashboardDesign.css" text="Ajouter" />
+            <Button fx:id="addBtn" layoutX="528.0" layoutY="552.0" mnemonicParsing="false" onAction="#addUtilistauerAdd" prefHeight="37.0" prefWidth="83.0" styleClass="add-btn" stylesheets="@../../Styles/dashboardDesign.css" text="Ajouter" />
             <Button fx:id="updateBtn" layoutX="419.0" layoutY="552.0" mnemonicParsing="false" onAction="#updateUtilisateur" prefHeight="37.0" prefWidth="83.0" styleClass="update-btn" stylesheets="@../../Styles/dashboardDesign.css" text="Modifier" />
             <Button fx:id="deleteBtn" layoutX="310.0" layoutY="552.0" mnemonicParsing="false" onAction="#DeleteUtilisateur" prefHeight="37.0" prefWidth="83.0" styleClass="delete-btn" stylesheets="@../../Styles/dashboardDesign.css" text="Supprimer" />
             <Button fx:id="clearBtn" layoutX="204.0" layoutY="552.0" mnemonicParsing="false" onAction="#addUtilisateurReset" prefHeight="37.0" prefWidth="83.0" styleClass="clear-btn" stylesheets="@../../Styles/dashboardDesign.css" text="Clear" />

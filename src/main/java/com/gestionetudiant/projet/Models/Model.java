@@ -3,7 +3,6 @@ package com.gestionetudiant.projet.Models;
 import com.gestionetudiant.projet.Views.AccountType;
 import com.gestionetudiant.projet.Views.ViewFactory;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class Model {
     private static Model model;
@@ -11,11 +10,15 @@ public class Model {
     private final DatabaseDriver databaseDriver;
     private AccountType loginAccountType = AccountType.UTILISATEUR;
 
-    // utilisateur data section
+    /*
+        section données utilisateur
+     */
     private final Utilisateur utilisateur;
     private boolean utilisateurLoginSuccessFlag;
 
-    // Admin data section
+    /*
+        section données Admin
+     */
     private boolean adminLoginSuccessFlag;
 
     private Model() {
@@ -38,7 +41,10 @@ public class Model {
     public AccountType getLoginAccountType() {return loginAccountType;}
     public void setLoginAccountType(AccountType loginAccountType) {this.loginAccountType = loginAccountType;}
 
-    // utilisateur method section
+    /*
+        section méthode utilisateur
+     */
+
     public boolean getUtilisateurLoginSuccessFlag() {return this.utilisateurLoginSuccessFlag;}
     public void setUtilisateurLoginSuccessFlag(boolean flag) {this.utilisateurLoginSuccessFlag = flag;}
     public Utilisateur getUtilisateur() {
@@ -59,8 +65,9 @@ public class Model {
         }
     }
 
-
-    // admin method section
+    /*
+        section méthode utilisateur
+     */
     public boolean getAdminLoginSuccessFlag() {return this.adminLoginSuccessFlag;}
     public void setAdminLoginSuccessFlag(boolean flag) {this.adminLoginSuccessFlag = flag;}
     public void evaluateAdminCred(String idAdmin,String motPass) {
@@ -73,4 +80,5 @@ public class Model {
             e.printStackTrace();
         }
     }
+
 }

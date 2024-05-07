@@ -8,8 +8,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import jdk.jshell.execution.Util;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -18,11 +16,7 @@ public class UtilisateurMenuController implements Initializable {
     public Button deconnecter_btn;
     @FXML
     public Label UtilisateurNomPrenom;
-
-    public void displayUsername() {
-        UtilisateurNomPrenom.setText(getData.nom+" "+getData.prenom);
-    }
-
+    public void displayUsername() {UtilisateurNomPrenom.setText(getData.nom+" "+getData.prenom);}
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         addListeners();
@@ -42,5 +36,4 @@ public class UtilisateurMenuController implements Initializable {
         Stage stage = (Stage) deconnecter_btn.getScene().getWindow();
         stage.close();
     }
-//    public void setUtilisateurNomPrenom(String nomPrenom) {UtilisateurNomPrenom.setText(nomPrenom);}
 }
